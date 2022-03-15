@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>O Case Gulliver Traveller</title>
+</head>
+
+<body>
+
+    <!--header Inicio da tela, parte superior,  a nav-->
+    <header class="header-top">
+        <h1 class="header-title">O Case Gulliver Traveller</h1>
+        <!--menu navegação-->
+        <nav class="header-nav">
+            <ul>
+                <li><a href="">História de São Paulo</a></li>
+                <li><a href="">Pontos turisticos de São Paulo</a></li>
+                <li><a href="">Mapas da Cidade</a></li>
+            </ul>
+        </nav>
+        <!--fim menu navegação-->
+    </header>
+    <!--fim header inicio tela, parte superior, a nav-->
+
+    <section class="container">
+        <form name="dados" id="dados" action="" method="post">
+            <div id="form-div">
+                <section class="about">
+                    <h1>CADASTRE PARA RECEBER PROMOÇÃO DOS PONTOS TURÍSTICOS DE SAMPA</h1>
+                </section>
+                <div class="campos">
+                    <div class="em__linha">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required placeholder="Ex: Antonio Pereira">
+                    </div>
+                    <div class="">
+                        <h3>Endereço:</h3>
+                        <div class="em__linha">
+                            <label for="rua">Rua:</label>
+                            <input type="text" id="rua" required placeholder="Ex: Av. Paulista">
+                            <label for="numero">Número:</label>
+                            <input type="text" id="numero" required placeholder="Ex: 1105">
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" required placeholder="Ex: Cerqueira Cesar">
+                        </div>
+                    </div>
+                    <div class="campos">
+                        <div class="em__linha">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" required placeholder="Ex: 01311-000">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="numero" required placeholder="Ex: São Paulo">
+                            <label for="estados">Estados:</label>
+                            <input list="uf" id="estados" class="lista" required placeholder="Ex: Selecione o estado">
+                        </div>
+                        <div class="Complemento">
+                            <h3>Complemento:</h3>
+                            <div class="em_linha">
+                                <label for="complemento"></label>
+                                <input type="text" id="Complemento" required placeholder="Ex: Apt, Casa, Ponto Ref.">
+                            </div>
+                        </div>
+                    </div>
+                    <datalist id="uf">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </datalist>
+                </div>
+                <div class="campos">
+                    <h3>Contato:</h3>
+                    <div class="em__linha">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" required placeholder="Ex:+55 (11)3385-8010">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required placeholder="Ex:antonio@gmail.com">
+                    </div>
+                </div>
+                <div class="campos">
+                    <h3>Autoriza usarmos e compartilharmos os seu dados?</h3>
+                    <div class="em__linha">
+                        <label for="huey">Sim</label>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                        <label for="huey">Não</label>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                        <br>
+                        <label for="pontoturistico">Qual Ponto turisticos gostaria de receber informações?</label>
+                        <input list="pontoturistico" id="detalhe" class="lista" required
+                            placeholder="Ex: Selecione o Ponto turistico">
+                    </div>
+
+                </div>
+                <datalist id="pontoturistico">
+                    <option value="Zoológico de São Paulo">Zoológico de São Paulo</option>
+                    <option value="MASP - Museu de Arte de São Paulo">MASP - Museu de Arte de São Paulo</option>
+                    <option value="Parque Ibirapuera">Parque Ibirapuera</option>
+                    <option value="Parque da Mônica">Parque da Mônica</option>
+                    <option value="Museu Catavento">Museu Catavento</option>
+                    <option value="Museu da Língua Portuguesa">Museu da Língua Portuguesa</option>
+                    <option value="Beco do Batman">Beco do Batman</option>
+                    <option value="Allianz Parque">Allianz Parque</option>
+                    <option value="Teatro Municipal de São Paulo">Teatro Municipal de São Paulo</option>
+                    <option value="25 de Março">25 de Março</option>
+                </datalist>
+                <br>
+                <div class="campos">
+                    <div class="em__linha">
+                        <label for="informacoes">Caso não localize o ponto turistico, escreva o ponto turistico que
+                            gostaria aqui:</label>
+
+
+                        <br>
+                        <br>
+                        <textarea name="" id="informacoes" placeholder="Escreva o ponto turistico aqui" rows="5"
+                            cols="2"></textarea>
+                    </div>
+                    <div class="campo">
+
+                        <label>
+                            <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter?
+                        </label>
+                    </div>
+                    <div class="botoes">
+                        <br>
+                        <input type="submit" value="Enviar Informações">
+                    </div>
+                </div>
+        </form>
+    </section>
+
+</html>
